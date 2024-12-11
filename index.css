@@ -129,75 +129,22 @@ main .img{
 main .img img{
     width: 100%;
 }
-.about{
-    width: 100%;
-    padding: 64px 0 ;
-}
-.about .container{
-    display: flex;
-    align-items: center;
-    gap: 42px ;
-    flex-wrap: wrap;
-}
-.about .img{
-    flex: 1 1 200px;
-}
-.about .img img{
-    width: 100%;
-}
-.about .text{
-    flex: 1 1 300px;
-}
-.about .text h3{
+/* scroll to top icon */
+.scroll-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #5539fb;
+    border-radius: 50%;
+    border: none;
+    color: #f1f3ff;
     font-size: 24px;
-    font-weight:600;
-    margin-bottom: 24px;
-    border-bottom: 1px solid var(--primary);
-    display: inline-block;
-}
-.about .text p{
-    line-height: 160px;
-    margin-bottom: 36px;
-}
-.about .text .btn-outline{
-    border: 1px solid var(--primary);
-    border-radius: 6px;
-    padding: 10px 30px;
-    color: var(--primary);
-    transition: all .3s ease;
-}
-.about .text .btn-outline:hover{
-    background-color: var(--primary);
-    color: var(--light);
-}
-/*services*/
-.services{
-    width: 100%;
-    padding: 64px 0;
-}
-.services .contentservices-list{
-    position: relative;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: none;
 
 }
-.services .title{
-    text-align: center;
-    margin-bottom: 36px;
-}
-.services .title h3{
-    border-bottom: 1px solid var(--primary);
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 600;
-}
-.services .services-list{
-    display: flex;
-    gap: 36px;
-    flex-wrap: wrap;
-}
-.services .services-list li{
-    flex: 1 1 300px;
-}
-.services .services-list li i{
-    font-size: 38px;
-    color: var(--primary);
+.scroll-to-top:hover{
+    background-color: var(--primary);
 }
